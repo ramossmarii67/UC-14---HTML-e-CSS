@@ -1,0 +1,55 @@
+:root {
+    --cor-primaria: #0a0408;
+    --cor-secundaria: #870a22;
+    --cor-fundo: #ffff;
+    --cor-texto: #230308;
+    --cor-branca: #ffff;
+
+    --fonte-principal: "Fjalla One", sans-serif;
+
+    --borda-radius: 20px;
+    --sombra: 0 4px 10px rgb(56, 55, 55); }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--fonte-principal);
+        /*background-color: var(--cor-fundo);*/
+        color: var(--cor-texto);
+        background-image: url(Cinema\ aesthetic\ collage\ core.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .caixa {
+        
+        background-color: var(--cor-branca);
+        padding: 30px;
+        border-radius: var(--borda-radius);
+        box-shadow: var(--sombra);
+        text-align: center;
+        width: 300px;
+
+    }
+
+    h1 {
+        color: var(--cor-primaria);
+    }
+
+    button {
+        background-color: var(--cor-primaria);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: var(--borda-radius);
+    }
+
+    button:hover {
+        background-color: var(--cor-secundaria);
+    }
