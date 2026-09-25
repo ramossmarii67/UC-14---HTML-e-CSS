@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 id="título">Meu Planejamento de Estudos</h1>
+
+        <h2>Nova Tarefa</h2>
+
+        <input type="text" id="tarefa" placeholder="Digite o nome da tarefa">
+
+        <input type="text" id="matéria" placeholder="Digite a matéria">
+
+        <select id="prioridade">
+            <option value=""></option>
+            <option value="Baixa">Baixa</option>
+            <option value="Média">Média</option>
+            <option value="Alta">Alta</option>
+        </select>
+
+        <button onclick="adicionatTarefa()">
+            Cadastrar tarefa
+        </button>
+
+        <button onclick="limparCampos()">
+            Limpar campos
+        </button>
+
+        <p id="mensagem"></p>
+
+        <div class="contadores">
+
+            <p id="contador">Tarefas cadastradas: 0</p>
+            <p id="contadorConcluidas">Tarefas concluídas: 0</p>
+
+            <button onclick="alternarModo()">
+                Modo de concentração
+            </button>
+
+            <h2>Minhas tarefas</h2>
+
+            <div id="listaTarefas"></div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
